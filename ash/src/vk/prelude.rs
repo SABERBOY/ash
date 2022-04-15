@@ -56,3 +56,7 @@ impl From<vk::Extent2D> for vk::Rect2D {
         }
     }
 }
+
+pub trait HasStructureType {
+    const STRUCTURE_TYPE: vk::StructureType;
+}
